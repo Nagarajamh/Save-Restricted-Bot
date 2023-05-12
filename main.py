@@ -13,7 +13,7 @@ api_id = os.environ.get("ID", None)
 bot = Client("mybot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
 session_string = os.environ.get("STRING", None)
-if ss is not None:
+if session_string is not None:
 	acc = Client("myacc" ,api_id=api_id, api_hash=api_hash, session_string=session_string)
 	acc.start()
 else: acc = None
