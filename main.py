@@ -12,9 +12,9 @@ api_hash = os.environ.get("HASH", None)
 api_id = os.environ.get("ID", None)
 bot = Client("mybot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
-ss = os.environ.get("STRING", None)
+session_string = os.environ.get("STRING", None)
 if ss is not None:
-	acc = Client("myacc" ,api_id=api_id, api_hash=api_hash, session_string=ss)
+	acc = Client("myacc" ,api_id=api_id, api_hash=api_hash, session_string=session_string)
 	acc.start()
 else: acc = None
 
